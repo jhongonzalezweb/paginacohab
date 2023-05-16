@@ -1,4 +1,4 @@
-var seconds = 6; 
+var seconds = 60; 
 var song = 'audio.mp3' ;
 var audio = document.getElementById('song');
 audio.src = song
