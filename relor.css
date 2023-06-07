@@ -9,8 +9,8 @@
 body {
 	background:url(bg.jpg) #000000;
 	background-size:cover;
-	color: white;
-	font-size: 16px;
+	color:#fff;
+	font-size: 60px;
 }
 
 .wrap {
@@ -20,7 +20,7 @@ body {
   }
 
 .widget {
-	width: 40%;
+	width: 100%;
 	margin: 2em;
 	/*margin:32px; */
 }
@@ -33,7 +33,7 @@ body {
 .fecha {
 	font-family: Oswald, Arial;
 	text-align: center;
-	font-size:2.0em;
+	font-size:1.5em;
 	margin-bottom: 0.3125rem;
 	/*margin-bottom: 5px;*/
 	background: rgba(0,0,0,.5);
@@ -43,7 +43,7 @@ body {
 
 .reloj {
 	font-family: Oswald, Arial;
-	width: 200%;
+	width: 100%;
 	padding: 20px;
 	font-size: 4em;
 	text-align: center;
