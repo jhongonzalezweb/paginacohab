@@ -57,7 +57,7 @@
 		if (minutos < 10) { minutos = "0" + minutos; }
 		if (segundos < 10) { segundos = "0" + segundos; }
 		// if (segundos == 00){ location.reload(); }
-		if (horas == 00 && minutos == 00 && segundos == 00) { location.reload(); }
+		if (horas == 01 && minutos == 00 && segundos == 00) { location.reload(); }
 
 		pMinutos.textContent = minutos;
 		pSegundos.textContent = segundos;
