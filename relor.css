@@ -9,7 +9,7 @@
 body {
 	background:url(bg.jpg) #000000;
 	background-size:cover;
-	color:#fff;
+	color: white;
 	font-size: 16px;
 }
 
@@ -33,7 +33,7 @@ body {
 .fecha {
 	font-family: Oswald, Arial;
 	text-align: center;
-	font-size:1.5em;
+	font-size:2.0em;
 	margin-bottom: 0.3125rem;
 	/*margin-bottom: 5px;*/
 	background: rgba(0,0,0,.5);
@@ -43,7 +43,7 @@ body {
 
 .reloj {
 	font-family: Oswald, Arial;
-	width: 100%;
+	width: 150%;
 	padding: 20px;
 	font-size: 4em;
 	text-align: center;
@@ -56,6 +56,6 @@ body {
 
 .reloj .segundos,
 .reloj .ampm {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	display: block;
 }
