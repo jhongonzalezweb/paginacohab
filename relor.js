@@ -1,5 +1,5 @@
-(function(){
-	var actualizarHora = function(){
+(function () {
+	var actualizarHora = function () {
 		// Obtenemos la fecha actual, incluyendo las horas, minutos, segundos, dia de la semana, dia del mes, mes y año;
 		var fecha = new Date(),
 			horas = fecha.getHours(),
@@ -21,7 +21,7 @@
 			pMes = document.getElementById('mes'),
 			pYear = document.getElementById('year');
 
-		
+
 		// Obtenemos el dia se la semana y lo mostramos
 		var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
 		pDiaSemana.textContent = semana[diaSemana];
@@ -44,7 +44,7 @@
 		}
 
 		// Detectamos cuando sean las 0 AM y transformamos a 12 AM
-		if (horas == 0 ){
+		if (horas == 0) {
 			horas = 12;
 		}
 
@@ -54,10 +54,11 @@
 		pAMPM.textContent = ampm;
 
 		// Minutos y Segundos
-		if (minutos < 10){ minutos = "0" + minutos; }
-		if (segundos < 10){ segundos = "0" + segundos; }
+		if (minutos < 10) { minutos = "0" + minutos; }
+		if (segundos < 10) { segundos = "0" + segundos; }
 		// if (segundos == 00){ location.reload(); }
-		
+		if (horas == 00 && minutos == 00 && segundos == 00) { location.reload(); }
+
 		pMinutos.textContent = minutos;
 		pSegundos.textContent = segundos;
 	};
