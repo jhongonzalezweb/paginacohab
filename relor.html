@@ -1,61 +1,36 @@
-* {
-	margin:0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-body {
-	background:url(bg.jpg) #000000;
-	background-size:cover;
-	color:#fff;
-	font-size: 30px;
-}
-
-.wrap {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-
-.widget {
-	width: 50%;
-	margin: 2em;
-	/*margin:32px; */
-}
-
-.widget p {
-	display: inline-block;
-	line-height: 1em;
-}
-
-.fecha {
-	font-family: Oswald, Arial;
-	text-align: center;
-	font-size:1.5em;
-	margin-bottom: 0.3125rem;
-	/*margin-bottom: 5px;*/
-	background: rgba(0,0,0,.5);
-	padding: 20px;
-	width: 100%;
-}
-
-.reloj {
-	font-family: Oswald, Arial;
-	width: 100%;
-	padding: 20px;
-	font-size: 4em;
-	text-align: center;
-	background: rgba(0,0,0,.5);
-}
-
-.reloj .caja-segundos {
-	display: inline-block;
-}
-
-.reloj .segundos,
-.reloj .ampm {
-	font-size: 2rem;
-	display: block;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="relor.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="widget">
+            <div class="fecha">
+                <p id="diaSemana" class="diaSemana">Lunes</p>
+                <p id="dia" class="dia">27</p>
+                <p>de </p>
+                <p id="mes" class="mes">Octubre</p>
+                <p>del </p>
+                <p id="year" class="year">2015</p>
+            </div>
+    
+            <div class="reloj">
+                <p id="horas" class="horas">11</p>
+                <p>:</p>
+                <p id="minutos" class="minutos">48</p>
+                <p>:</p>
+                <div class="caja-segundos">
+                    <p id="ampm" class="ampm">AM</p>
+                    <p id="segundos" class="segundos">12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="relor.js"></script>
+</body>
+</html>
