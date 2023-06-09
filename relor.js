@@ -61,10 +61,9 @@
         if (segundos % 5 == 00) { 
 			// location.reload();
 			var r = Math.floor(Math.random() * 10);
-			console.log(r);
 			var d = `'imges/img_tree (${r}).jpg'`;
 			document.body.style.background = `url(${d}) no-repeat fixed center`;
-			// document.body.style.background = "url('img/img_tree (2).jpg')";
+			// document.body.style.background = "url('imges/img_tree (2).jpg')";
 		}
 
         pMinutos.textContent = minutos;
