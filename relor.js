@@ -49,7 +49,7 @@
 		}
 
 		// Si queremos mostrar un cero antes de las horas ejecutamos este condicional
-		// if (horas < 10){horas = '0' + horas;}
+	        if (horas < 10){horas = '0' + horas;}
 		pHoras.textContent = horas;
 		pAMPM.textContent = ampm;
 
@@ -62,8 +62,8 @@
 			// location.reload();
 			var r = Math.floor(Math.random() * 10);
 			var d = `'images/img_tree (${r}).jpg'`;
-			document.body.style.background = `url(${d}) no-repeat fixed center`;
-			// document.body.style.background = "url('images/img_tree (2).jpg')";
+			// document.body.style.background = `url(${d}) no-repeat fixed center`;
+			document.body.style.background = "url('images/img_tree (0).jpg')";
 		}
 
         pMinutos.textContent = minutos;
