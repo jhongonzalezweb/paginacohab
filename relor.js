@@ -58,7 +58,7 @@
 		if (segundos < 10) { segundos = "0" + segundos; }
 		// if (minutos == 00 && segundos == 00) { location.reload(); }
 		// if (horas == 12 && minutos == 00 && segundos == 00) { location.reload(); }
-		if (segundos == 00) {
+		if (minutos == 00 && segundos == 00) {
 			// location.reload();
 			var r = Math.floor(Math.random() * 10);
 			var d = `'images/img_tree (${r}).jpg'`;
