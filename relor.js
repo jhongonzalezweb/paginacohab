@@ -62,7 +62,7 @@
 		const h = document.getElementById("horas");
 		const m = document.getElementById("minutos");
 
-		if (horas >= 6 && horas < 7) {
+		if (horas >= 5 && horas < 7) {
 			h.classList.add("styles")
 			m.classList.add("styles")
 		}
@@ -78,7 +78,7 @@
 			document.body.style.background = `url(${d}) no-repeat fixed center`;
 			// document.body.style.background = "url('images/img_tree (0).jpg')";
 			// Desplazarse la longitud de una página
-			window.scrollBy(0, window.innerHeight);
+			// window.scrollBy(0, window.innerHeight);
 		}
 
 		pMinutos.textContent = minutos;
