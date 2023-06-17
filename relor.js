@@ -58,7 +58,20 @@
 		if (segundos < 10) { segundos = "0" + segundos; }
 		// if (minutos == 00 && segundos == 00) { location.reload(); }
 		// if (horas == 12 && minutos == 00 && segundos == 00) { location.reload(); }
-		if (minutos == 00 && segundos == 00) {
+
+		const h = document.getElementById("horas");
+		const m = document.getElementById("minutos");
+
+		if (horas >= 6 && horas <= 7) {
+			h.classList.add("styles")
+			m.classList.add("styles")
+		}
+		else {
+			h.classList.add("stylesOrg")
+			m.classList.add("stylesOrg")
+		}
+
+		if (segundos == 00) {
 			// location.reload();
 			var r = Math.floor(Math.random() * 10);
 			var d = `'images/img_tree (${r}).jpg'`;
