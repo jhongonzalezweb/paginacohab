@@ -62,7 +62,7 @@
 		const h = document.getElementById("horas");
 		const m = document.getElementById("minutos");
 
-		if (horas >= 6 && horas <= 7) {
+		if (horas >= 6 && horas < 7) {
 			h.classList.add("styles")
 			m.classList.add("styles")
 		}
