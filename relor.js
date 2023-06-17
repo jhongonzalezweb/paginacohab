@@ -71,7 +71,7 @@
 			m.classList.add("stylesOrg")
 		}
 
-		if (horas == 00) {
+		if (minutos == 00 && segundos == 00) {
 			// location.reload();
 			var r = Math.floor(Math.random() * 10);
 			var d = `'images/img_tree (${r}).jpg'`;
