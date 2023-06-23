@@ -57,12 +57,12 @@
 		if (minutos < 10) { minutos = "0" + minutos; }
 		if (segundos < 10) { segundos = "0" + segundos; }
 		// if (minutos == 00 && segundos == 00) { location.reload(); }
-		if (horas == 8 && minutos == 00 && segundos == 00) { location.reload(); }
+		if (horas == 7 && minutos == 59 && segundos == 55 ) { location.reload(); }
 
 		const h = document.getElementById("horas");
 		const m = document.getElementById("minutos");
 
-		if (horas >= 5 && horas < 7) {
+		if (horas >= 5 && horas < 7 && ampm == 'AM') {
 			h.classList.add("styles")
 			m.classList.add("styles")
 		}
