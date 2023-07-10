@@ -1,3 +1,8 @@
+
+function my_code() {
+	document.body.style.background = "url('images/img_tree (0).jpg') no-repeat fixed center";
+}
+
 (function () {
 	var actualizarHora = function () {
 		// Obtenemos la fecha actual, incluyendo las horas, minutos, segundos, dia de la semana, dia del mes, mes y año;
