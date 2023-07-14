@@ -68,8 +68,8 @@ function my_code() {
 		const h = document.getElementById("horas");
 		const m = document.getElementById("minutos");
 
-		// if (horas >= 5 && horas < 7 && ampm == 'AM') {
-		if (horas == 10) {
+		// if (horas == 10) {
+		if (horas >= 1 && horas < 7 && ampm == 'AM') {
 			h.classList.add("styles")
 			m.classList.add("styles")
 		}
@@ -77,7 +77,6 @@ function my_code() {
 			h.classList.add("stylesOrg")
 			m.classList.add("stylesOrg")
 		}
-
 		if (minutos == 00 && segundos == 00) {
 			// location.reload();
 			var r = Math.floor(Math.random() * 10);
