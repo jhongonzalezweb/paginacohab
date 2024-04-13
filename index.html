@@ -912,6 +912,12 @@
         </div>
 
         <!-- JS VENDOR -->
+	<script>
+    function autoRefresh() {
+        window.location = window.location.href;
+    }
+    setInterval('autoRefresh()', 15000);
+</script>
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/owl.carousel.js"></script>
